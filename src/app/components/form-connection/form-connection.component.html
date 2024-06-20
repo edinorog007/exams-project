@@ -1,0 +1,15 @@
+<div class="container">
+  <section class="form-connection" id="contact">
+    <div class="form-connection-background">
+      <span class="form-connection-title form-element-background">Как с нами связаться?</span>
+      <div class="form-connection-block">
+        <input type="text" placeholder="Введите фамилию" class="form-element-background" [(ngModel)]="fields.lastName">
+        <input type="text" placeholder="Введите номер телефона" class="form-element-background" [(ngModel)]="fields.phone">
+        <input type="text" placeholder="Введите имя" class="form-element-background" [(ngModel)]="fields.name">
+        <input type="text" placeholder="Введите email" class="form-element-background" [(ngModel)]="fields.email">
+        <input type="text" placeholder="Введите отчество" class="form-element-background" [(ngModel)]="fields.fatherName">
+        <button type="button" (click)="validate()">Оставить заявку</button>
+      </div>
+    </div>
+  </section>
+</div>

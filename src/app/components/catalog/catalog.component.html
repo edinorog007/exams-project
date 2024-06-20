@@ -1,0 +1,36 @@
+<div class="container">
+  <section class="catalog">
+    <div class="catalog-category">
+      <button type="button" class="catalog-category-title subtitle" (click)="scrollTo(oge)">ОГЭ</button>
+      <button type="button" class="catalog-category-title subtitle" (click)="scrollTo(ege)">ЕГЭ</button>
+    </div>
+    <div class="catalog-title title">Каталог</div>
+    <div class="new-cards">
+      <div class="new-catalog">
+        <div class="new-cards-title subtitle" #oge>Для тех кто сдает ОГЭ</div>
+        <div class="new-card" *ngFor="let book of bookOge; let i = index;">
+          <img class="new-card-image" src="../../../assets/images/{{book.image}}" alt="book-{{i}}">
+          <div class="new-card-text">
+            <span class="new-card-desc">{{book.desc}}</span>
+            <span class="new-card-text-static">Стоимость данного строгого экземпляра всего:</span>
+            <div class="new-card-line"></div>
+            <button type="button" class="new-card-amount" (click)="setLocalStorage(book)">{{book.amount}} ₽</button>
+          </div>
+        </div>
+      </div>
+      <div class="new-catalog">
+        <div class="new-cards-title subtitle" #ege>Для тех кто сдает ЕГЭ</div>
+        <div class="new-card" *ngFor="let book of bookEge; let i = index;">
+          <img class="new-card-image" src="../../../assets/images/{{book.image}}" alt="book-{{i}}">
+          <div class="new-card-text">
+            <span class="new-card-desc">{{book.desc}}</span>
+            <span class="new-card-text-static">Стоимость данного строгого экземпляра всего:</span>
+            <div class="new-card-line"></div>
+            <div class="new-card-amount" (click)="setLocalStorage(book)">{{book.amount}} ₽</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<form-connection-component></form-connection-component>

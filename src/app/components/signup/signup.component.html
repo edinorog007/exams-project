@@ -1,0 +1,13 @@
+<div class="container">
+  <section class="signup">
+    <div class="signup-form">
+      <div class="signup-title signup-background" >Регистрация</div>
+      <input type="text" class="signup-background" placeholder="Введите email" [(ngModel)]="fields.email">
+      <input type="password" class="signup-background"  placeholder="Введите пароль" [(ngModel)]="fields.password">
+      <input type="text" class="signup-background"  placeholder="Введите логин"  [(ngModel)]="fields.login">
+      <input type="password" class="signup-background"  placeholder="Повторите пароль"  [(ngModel)]="fields.repeatPassword">
+      <input type="text" class="signup-background"  placeholder="Введите Имя"  [(ngModel)]="fields.name">
+      <button type="button" (click)="validate()">Зарегистрироваться</button>
+    </div>
+  </section>
+</div>

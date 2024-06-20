@@ -1,0 +1,37 @@
+<div class="container">
+  <section class="main">
+    <img class="main-img" src="../../../assets/images/book_main.png" alt="Book">
+    <span class="main-title">Здесь ты найдешь свою книгу</span>
+  </section>
+
+  <section class="new">
+    <div class="new-title title">Новинки прошлого года</div>
+    <div class="new-cards">
+      <div class="new-catalog">
+        <div class="new-cards-title subtitle">Для тех кто сдает ОГЭ</div>
+        <div class="new-card" *ngFor="let book of bookOge; let i = index;">
+          <img class="new-card-image" src="../../../assets/images/{{book.image}}" alt="book-{{i}}">
+          <div class="new-card-text">
+            <span class="new-card-desc">{{book.desc}}</span>
+            <span class="new-card-text-static">Стоимость данного строгого экземпляра всего:</span>
+            <div class="new-card-line"></div>
+            <button type="button" routerLink="catalog" class="new-card-amount">{{book.amount}} ₽</button>
+          </div>
+        </div>
+      </div>
+      <div class="new-catalog">
+        <div class="new-cards-title subtitle">Для тех кто сдает ЕГЭ</div>
+        <div class="new-card" *ngFor="let book of bookEge; let i = index;">
+          <img class="new-card-image" src="../../../assets/images/{{book.image}}" alt="book-{{i}}">
+          <div class="new-card-text">
+            <span class="new-card-desc">{{book.desc}}</span>
+            <span class="new-card-text-static">Стоимость данного строгого экземпляра всего:</span>
+            <div class="new-card-line"></div>
+            <div class="new-card-amount" routerLink="catalog">{{book.amount}} ₽</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<form-connection-component></form-connection-component>

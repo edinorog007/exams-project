@@ -1,0 +1,104 @@
+.about {
+  position: relative;
+  width: 100%;
+  padding: 78px 0 33px 0;
+
+  .about-img {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+
+  .about-title {
+    position: absolute;
+    z-index: 2;
+    color: #371F04;
+    font-family: PlayfairDisplayBlack, sans-serif;
+    font-size: 64px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    top: 50%;
+  }
+}
+
+
+.about-description {
+  padding: 100px 0;
+  .about-description-title {
+    width: auto;
+    padding: 12px 77px;
+    font-size: 40px;
+    margin-bottom: 37px;
+    text-align: left;
+  }
+
+  .about-description-wrapper {
+    padding: 72px 0 144px 0;
+
+    .about-description-background {
+      padding: 49px 0 56px 0;
+      border: 30px;
+      box-shadow: 0 0 40px 40px #EADDCB;
+      background: #EADDCB;
+
+      .about-description-element-background {
+        background: #EFE8E1;
+        border-radius: 10px;
+        color: #65513B;
+        font-size: 32px;
+        padding: 8px 24px;
+      }
+
+      .about-description-block {
+        position: relative;
+
+        span {
+          display: inline-block;
+          font-size: 36px;
+          color: #371F04;
+        }
+
+        span:not(:last-child) {
+          margin-bottom: 45px;
+        }
+
+        /*        input {
+                  border: none;
+
+                  &::placeholder {
+                    font-family: PlayfairDisplayRegular, sans-serif;
+                    color: #65513B;
+                  }
+
+                  &:focus-visible {
+                    outline: none;
+                  }
+                }
+
+                button {
+                  position: absolute;
+                  bottom: -30px;
+                  right: 39px;
+                  font-size: 32px;
+                  width: 337px;
+                  cursor: pointer;
+                  color: #EFE8E1;
+                  background: #371F04;
+                  border: 10px;
+                  border-radius: 10px;
+                  padding: 21px 33px;
+                  transition: .3s;
+
+                  &:hover {
+                    color: #371F04;
+                    background: #EFE8E1;
+                  }
+                }*/
+      }
+    }
+  }
+}
+

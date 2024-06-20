@@ -1,0 +1,21 @@
+<div class="container">
+  <section class="cart">
+    <div class="cart-title title">Корзина или сколько нужно купить</div>
+    <div class="cards">
+      <div class="card" *ngFor="let book of books; let i = index;">
+        <img src="../../../assets/images/{{book.image}}" alt="Book{{i}}">
+        <div class="card-text">
+          <div class="card-text-title">{{book.name}}</div>
+          <div class="card-text-description">{{book.desc}}</div>
+          <div class="card-text-amounts">
+            <span class="card-text-amount">{{book.amount}} ₽</span>
+            <span class="card-text-amount">Количество: 1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="total-cost">Общая стоимость:
+      <span>{{totalCost}} ₽</span>
+    </div>
+  </section>
+</div>

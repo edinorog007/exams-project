@@ -1,0 +1,52 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 15px 0;
+  background: #221405;
+  .container {
+    display: grid;
+    grid-template:  1fr / 62px auto;
+    column-gap: 86px;
+    align-items: center;
+    a {
+      display: inline;
+      text-decoration: none;
+    }
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      .menu-item {
+        list-style: none;
+        a:not(:has(svg)) {
+          text-decoration: none;
+          background: #CDAD95;
+          border-radius: 10px;
+          text-align: center;
+          box-sizing: border-box;
+          padding: 8px 30px;
+          color: #371F04;
+          font-family: MulishLight, sans-serif;
+          font-size: 20px;
+          transition: background .3s;
+          &:hover {
+            background: #674a3a;
+            color: #CDAD95;
+          }
+        }
+        a {
+          svg {
+            transition: fill .3s;
+            fill: #D8C9C9;
+            &:hover {
+              fill: #674a3a;
+            }
+          }
+        }
+      }
+    }
+  }
+}

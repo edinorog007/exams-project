@@ -1,0 +1,11 @@
+<div class="container">
+  <section class="login">
+    <div class="login-form">
+      <div class="login-title login-background">Вход</div>
+      <input type="text" class="login-background" placeholder="Введите email" [(ngModel)]="fields.email">
+      <input type="password" class="login-background"  placeholder="Введите пароль" [(ngModel)]="fields.password">
+      <input type="text" class="login-background"  placeholder="Введите логин"  [(ngModel)]="fields.login">
+      <button type="button" (click)="validate()">Войти</button>
+    </div>
+  </section>
+</div>

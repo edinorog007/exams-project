@@ -1,0 +1,23 @@
+.footer {
+  padding: 15px 0;
+  background: #221405;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    a {
+      text-decoration: none;
+      line-height: 1;
+    }
+
+    span {
+      color: #EFE8E1;
+      font-size: 20px;
+      font-family: MulishLight, sans-serif;
+    }
+  }
+
+}
